@@ -1,0 +1,358 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f8f4; /* Fundo com tom natural */
+    color: #2d3e2f; /* Texto em verde escuro */
+}
+
+header {
+    background-color: #4CAF50; /* Verde sustentável */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Georgia', serif; /* Estilo elegante */
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #3e8e41; /* Verde escuro no hover */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 36px;
+    color: #2d3e2f; /* Verde escuro */
+}
+
+main p {
+    font-size: 18px;
+    color: #4f5d51; /* Verde acinzentado */
+}
+
+header nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid white; /* Linha inferior */
+}
+
+
+/* Seção do Banner */
+.sobre-banner {
+    background-color: #4CAF50; /* Verde inspirador */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.sobre-banner h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.sobre-banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Seções de conteúdo */
+.sobre-historia, .sobre-missao, .sobre-visao {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f4f8f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-historia h2, .sobre-missao h2, .sobre-visao h2 {
+    font-size: 28px;
+    color: #2d3e2f; /* Verde escuro */
+    margin-bottom: 10px;
+}
+
+.sobre-historia p, .sobre-missao ul, .sobre-visao p {
+    font-size: 16px;
+    color: #4f5d51; /* Verde acinzentado */
+    line-height: 1.6;
+}
+
+/* Lista de Propósitos */
+.sobre-missao ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sobre-missao li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-missao li strong {
+    color: #4CAF50;
+    margin-right: 8px;
+}
+
+/* Citação */
+.sobre-visao blockquote {
+    font-size: 20px;
+    color: #2d3e2f;
+    font-style: italic;
+    margin: 20px 0;
+    border-left: 4px solid #4CAF50;
+    padding-left: 15px;
+}
+
+/* Banner de Introdução */
+.intro-banner {
+    background: linear-gradient(135deg, #4CAF50, #2d6a4f);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.intro-banner .banner-content {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slide-in 1.5s ease-out;
+}
+
+.intro-banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.intro-banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.intro-banner .cta-button {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.intro-banner .cta-button:hover {
+    background-color: #1b4332;
+}
+
+/* Texto Introdutório e Cartões */
+.intro-sustentabilidade {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro-sustentabilidade h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #2d3e2f;
+    margin-bottom: 30px;
+}
+
+.intro-sustentabilidade p {
+    text-align: center;
+    font-size: 18px;
+    color: #4f5d51;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f4f8f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #2d6a4f;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #4f5d51;
+}
+
+/* Seção de Destaque */
+.cta-section {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 40px;
+}
+
+.cta-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-section .cta-button {
+    background-color: white;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.cta-section .cta-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Animações */
+@keyframes slide-in {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilização do Slider */
+.image-slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9; /* Proporção horizontal */
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #f0f0f0;
+}
+
+.slider-container {
+    position: relative;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    transform: scale(0.8); /* Reduz tamanho das imagens no fundo */
+    overflow: hidden;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 2;
+    transform: scale(1); /* Destaque para a imagem ativa */
+}
+
+.slide.previous {
+    z-index: 1;
+    transform: translateX(-30%) scale(0.9); /* Posição e tamanho da imagem anterior */
+}
+
+.slide.next {
+    z-index: 1;
+    transform: translateX(30%) scale(0.9); /* Posição e tamanho da próxima imagem */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que as imagens preencham o contêiner */
+    object-position: center; /* Centraliza as imagens */
+    border-radius: 10px;
+}
+
+/* Botões de Navegação */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 18px;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+/* BOAS PRATICAS CSS ------------------------------------------------- */
+
